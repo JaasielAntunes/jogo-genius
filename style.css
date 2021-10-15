@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+
+body {
+    margin: 0;
+    background-color: rgb(164, 248, 221);
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 10px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue {
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.yellow {
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.red {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.green {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.5;
+}
